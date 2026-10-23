@@ -2,7 +2,11 @@
 
 A polished YouTube-inspired video platform built with React, TypeScript and Vite. It runs entirely in the browser with local sample media and persisted personal state — no backend or API keys required.
 
+**Live:** [siva4915.github.io](https://siva4915.github.io/) · **Source:** [github.com/Siva4915/Siva4915.github.io](https://github.com/Siva4915/Siva4915.github.io)
+
 ![Vuemora home](docs/screenshots/home.png)
+
+![Vuemora on GitHub Pages](docs/screenshots/github-pages.png)
 
 ## Preview
 

@@ -16,25 +16,20 @@ The repository name **Siva4915.github.io** is GitHub's special user-site reposit
 
 ## Publishing an update
 
-After changing the source and committing to main:
+After changing the source and committing to main, run the included script:
 
-1. Build:
+    powershell -ExecutionPolicy Bypass -File scripts/deploy-pages.ps1
 
-    npm run build
+The script:
 
-2. Update the production branch:
+1. Runs npm run build.
+2. Copies the production build into a temporary repository.
+3. Force-pushes that snapshot to the gh-pages branch.
+4. Leaves the source repository on main untouched.
 
-    git checkout --orphan gh-pages-new
-    git rm -rf --cached .
-    Get-ChildItem -Force -Exclude .git | Remove-Item -Recurse -Force
-    Copy-Item dist/* . -Recurse -Force
-    New-Item -ItemType File -Force .nojekyll
-    git add -A
-    git commit -m "Deploy Vuemora"
-    git push -f origin gh-pages-new:gh-pages
-    git checkout main
+GitHub Pages rebuilds within about a minute. The script uses the local Git credential helper; if Git asks you to sign in, complete the browser prompt.
 
-This is a manual branch deployment. It avoids relying on a GitHub Actions token scope.
+The script lives at **scripts/deploy-pages.ps1**. It is safe to run repeatedly.
 
 ## Optional: automate with GitHub Actions
 

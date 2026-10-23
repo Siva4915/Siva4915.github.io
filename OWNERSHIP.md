@@ -1,6 +1,6 @@
 # Ownership and handover
 
-Status: **owner recorded, deployment pending** — the copyright holder is **Chukka Siva**. Hosting, domain and final media decisions are still open.
+Status: **owner recorded; GitHub Pages live** — copyright holder **Chukka Siva**; site published at **https://siva4915.github.io/**. A custom domain and formal trademark clearance are still open.
 
 This document is a practical checklist, not legal advice. Copyright, contract, and trademark rules depend on your jurisdiction and on the terms of the tools used to create the work. Consult a qualified IP lawyer before relying on any ownership claim.
 
@@ -47,9 +47,11 @@ Have a lawyer adapt this before use:
 
 > For good and valuable consideration, the receipt and sufficiency of which are acknowledged, **[Contributor]** assigns to **[Owner]** all right, title, and interest in the contributions described in Schedule A, including copyright and all related rights, and agrees to execute any documents reasonably required to record or perfect that assignment.
 
-## 2. Server access
+## 2. Hosting access
 
-There are no server credentials in this project, and I cannot create or transfer a hosting account on your behalf. The app is a static Vite build, so it does not need a database or application server to run.
+The app is currently published on **GitHub Pages** from the owner-controlled repository **Siva4915/Siva4915.github.io**. There are no VPS or cloud-server credentials in this project, and no database or application server is required.
+
+The free Pages URL is **https://siva4915.github.io/**. A custom domain is a separate purchase (see section 3). GitHub account access and 2FA remain in the owner’s control.
 
 ### Recommended hosting
 
@@ -76,7 +78,7 @@ There are no server credentials in this project, and I cannot create or transfer
 
 ## 3. Domain access
 
-No domain has been registered for this project by me. A domain must be registered by you or your company through a registrar, in an account you control.
+The free GitHub Pages address **https://siva4915.github.io/** is live. No separate custom domain has been registered; a domain must be purchased by you or your company through a registrar, in an account you control.
 
 ### Steps
 
