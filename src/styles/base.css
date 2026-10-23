@@ -81,6 +81,26 @@
   --scrim: rgba(0, 0, 0, 0.55);
 }
 
+/* Native Android shell: leave room for the status bar and gesture area. */
+html.native-android {
+  --native-safe-top: 30px;
+  --native-safe-bottom: 16px;
+  --topbar-h: calc(56px + var(--native-safe-top));
+}
+
+html.native-android .topbar {
+  padding-top: var(--native-safe-top);
+}
+
+html.native-android .main-content {
+  padding-bottom: calc(56px + var(--native-safe-bottom));
+}
+
+html.native-android .mobile-nav {
+  height: calc(56px + var(--native-safe-bottom));
+  padding-bottom: var(--native-safe-bottom);
+}
+
 * {
   box-sizing: border-box;
 }

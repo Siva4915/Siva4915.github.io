@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Vuemora</string>
+    <string name="title_activity_main">Vuemora</string>
+    <string name="package_name">com.vuemora.app</string>
+    <string name="custom_url_scheme">com.vuemora.app</string>
+</resources>

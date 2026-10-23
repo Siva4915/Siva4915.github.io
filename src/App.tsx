@@ -5,6 +5,7 @@ import { useRoute } from './router'
 import { TopBar } from './components/TopBar'
 import { Sidebar } from './components/Sidebar'
 import { CreateModal } from './components/CreateModal'
+import { InstallPrompt } from './components/InstallPrompt'
 import { ShortsMark } from './components/ShortsMark'
 import { Home as HomePage } from './pages/Home'
 import { Watch } from './pages/Watch'
@@ -85,6 +86,7 @@ const Shell = () => {
         <RouterView />
       </main>
       <MobileNav />
+      <InstallPrompt />
       <ToastStack />
       <CreateModal />
     </div>

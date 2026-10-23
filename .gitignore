@@ -1,7 +1,17 @@
 node_modules/
 dist/
 shots/
+release/
 *.local
+
+# Android / Capacitor build output and local secrets
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.jks
+*.keystore
+
 *.tsbuildinfo
 .env
 .env.*

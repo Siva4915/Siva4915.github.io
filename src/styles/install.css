@@ -1,0 +1,110 @@
+
+/* ---------- PWA install prompt ---------- */
+.install-prompt {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 190;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: min(430px, calc(100vw - 32px));
+  padding: 10px 10px 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-lg);
+  animation: toast-in 0.25s var(--ease);
+}
+
+.install-prompt > img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  flex: 0 0 auto;
+}
+
+.install-prompt-copy {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.install-prompt-copy strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.install-prompt-copy span {
+  color: var(--text-2);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.install-prompt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 11px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--brand);
+  color: #062227;
+  font-size: 11px;
+  font-weight: 700;
+  flex: 0 0 auto;
+}
+
+.install-prompt-btn:hover {
+  filter: brightness(1.08);
+}
+
+.install-prompt-close {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-2);
+  flex: 0 0 auto;
+}
+
+.install-prompt-close:hover {
+  background: var(--surface);
+  color: var(--text);
+}
+
+@media (max-width: 680px) {
+  .install-prompt {
+    left: 10px;
+    right: 10px;
+    bottom: 66px;
+    width: auto;
+    padding: 9px 8px 9px 10px;
+    gap: 8px;
+  }
+
+  .install-prompt > img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .install-prompt-copy strong {
+    font-size: 12px;
+  }
+
+  .install-prompt-copy span {
+    font-size: 10px;
+  }
+
+  .install-prompt-btn {
+    height: 30px;
+    padding: 0 9px;
+  }
+}

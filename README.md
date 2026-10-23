@@ -4,6 +4,8 @@ A polished YouTube-inspired video platform built with React, TypeScript and Vite
 
 **Live:** [siva4915.github.io](https://siva4915.github.io/) · **Source:** [github.com/Siva4915/Siva4915.github.io](https://github.com/Siva4915/Siva4915.github.io)
 
+**Android APK:** [Download the latest build](https://github.com/Siva4915/Siva4915.github.io/releases/latest/download/Vuemora-1.0.0-android.apk) · **PWA:** open the live site in Chrome and choose **Install app**.
+
 ![Vuemora home](docs/screenshots/home.png)
 
 ![Vuemora on GitHub Pages](docs/screenshots/github-pages.png)
@@ -72,6 +74,15 @@ public/
   videos/         sample MP4 clips
   fonts/          local Roboto variable font
 ```
+
+## Android
+
+- [ANDROID.md](ANDROID.md) — APK download, sideload install steps, PWA installation, build instructions and signing notes.
+- Native shell: Capacitor 8, package `com.vuemora.app`, minimum Android 7.0.
+- The APK bundles the app and sample media for offline playback.
+- PWA install is supported through `public/manifest.webmanifest` and `public/sw.js`.
+
+![Vuemora on Android](docs/screenshots/android-app.png)
 
 ## Ownership and launch
 
